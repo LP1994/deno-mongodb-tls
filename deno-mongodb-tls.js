@@ -1,5 +1,9 @@
 #!/usr/bin/env -S deno run -A --config=./deno.json --check --reload --watch-hmr
 
+/**
+ * Connecting to MongoDB database that requires SSL doesn't work in deno@2.0.4, But it works in node@23.1.0.
+ */
+
 'use strict';
 
 import {

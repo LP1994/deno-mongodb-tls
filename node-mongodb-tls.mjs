@@ -1,5 +1,9 @@
 'use strict';
 
+/**
+ * Connecting to MongoDB database that requires SSL doesn't work in deno@2.0.4, But it works in node@23.1.0.
+ */
+
 import {
   MongoClient,
 } from 'mongodb';
