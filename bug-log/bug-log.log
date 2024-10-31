@@ -1,0 +1,81 @@
+MongoServerSelectionError: read ECONNRESET
+    at Topology.selectServer (file:///D:/Deno/App/Dir/npm/registry.npmjs.org/mongodb/6.10.0/lib/sdam/topology.js:303:38)
+    at eventLoopTick (ext:core/01_core.js:214:9)
+    at async Topology._connect (file:///D:/Deno/App/Dir/npm/registry.npmjs.org/mongodb/6.10.0/lib/sdam/topology.js:196:28)
+    at async Topology.connect (file:///D:/Deno/App/Dir/npm/registry.npmjs.org/mongodb/6.10.0/lib/sdam/topology.js:158:13)
+    at async topologyConnect (file:///D:/Deno/App/Dir/npm/registry.npmjs.org/mongodb/6.10.0/lib/mongo_client.js:223:17)
+    at async MongoClient._connect (file:///D:/Deno/App/Dir/npm/registry.npmjs.org/mongodb/6.10.0/lib/mongo_client.js:236:13)
+    at async MongoClient.connect (file:///D:/Deno/App/Dir/npm/registry.npmjs.org/mongodb/6.10.0/lib/mongo_client.js:161:13)
+    at async autoConnect (file:///D:/Deno/App/Dir/npm/registry.npmjs.org/mongodb/6.10.0/lib/operations/execute_operation.js:92:13)
+    at async executeOperation (file:///D:/Deno/App/Dir/npm/registry.npmjs.org/mongodb/6.10.0/lib/operations/execute_operation.js:36:22)
+    at async FindCursor._initialize (file:///D:/Deno/App/Dir/npm/registry.npmjs.org/mongodb/6.10.0/lib/cursor/find_cursor.js:51:26)
+Caused by MongoError: read ECONNRESET
+    at onHeartbeatFailed (file:///D:/Deno/App/Dir/npm/registry.npmjs.org/mongodb/6.10.0/lib/sdam/monitor.js:187:15)
+    at file:///D:/Deno/App/Dir/npm/registry.npmjs.org/mongodb/6.10.0/lib/sdam/monitor.js:286:9
+    at Object.runMicrotasks (ext:core/01_core.js:672:26)
+    at processTicksAndRejections (ext:deno_node/_next_tick.ts:59:10)
+    at runNextTicks (ext:deno_node/_next_tick.ts:76:3)
+    at eventLoopTick (ext:core/01_core.js:182:21)
+Caused by Error: read ECONNRESET
+    at __node_internal_captureLargerStackTrace (ext:deno_node/internal/errors.ts:93:9)
+    at __node_internal_errnoException (ext:deno_node/internal/errors.ts:141:10)
+    at TCP.onStreamRead [as onread] (ext:deno_node/internal/stream_base_commons.ts:209:20)
+    at TCP.#read (ext:deno_node/internal_binding/stream_wrap.ts:247:12)
+    at eventLoopTick (ext:core/01_core.js:175:7) {
+  reason: TopologyDescription {
+    type: "Unknown",
+    servers: Map(1) {
+      "127.0.0.1:27777" => ServerDescription {
+        address: "127.0.0.1:27777",
+        type: "Unknown",
+        hosts: [],
+        passives: [],
+        arbiters: [],
+        tags: {},
+        minWireVersion: 0,
+        maxWireVersion: 0,
+        roundTripTime: -1,
+        minRoundTripTime: 0,
+        lastUpdateTime: 239837,
+        lastWriteDate: 0,
+        error: MongoError: read ECONNRESET
+    at onHeartbeatFailed (file:///D:/Deno/App/Dir/npm/registry.npmjs.org/mongodb/6.10.0/lib/sdam/monitor.js:187:15)
+    at file:///D:/Deno/App/Dir/npm/registry.npmjs.org/mongodb/6.10.0/lib/sdam/monitor.js:286:9
+    at Object.runMicrotasks (ext:core/01_core.js:672:26)
+    at processTicksAndRejections (ext:deno_node/_next_tick.ts:59:10)
+    at runNextTicks (ext:deno_node/_next_tick.ts:76:3)
+    at eventLoopTick (ext:core/01_core.js:182:21)
+Caused by Error: read ECONNRESET
+    at __node_internal_captureLargerStackTrace (ext:deno_node/internal/errors.ts:93:9)
+    at __node_internal_errnoException (ext:deno_node/internal/errors.ts:141:10)
+    at TCP.onStreamRead [as onread] (ext:deno_node/internal/stream_base_commons.ts:209:20)
+    at TCP.#read (ext:deno_node/internal_binding/stream_wrap.ts:247:12)
+    at eventLoopTick (ext:core/01_core.js:175:7) {
+          [Symbol(errorLabels)]: [Set]
+        },
+        topologyVersion: null,
+        setName: null,
+        setVersion: null,
+        electionId: null,
+        logicalSessionTimeoutMinutes: null,
+        maxMessageSizeBytes: null,
+        maxWriteBatchSize: null,
+        maxBsonObjectSize: null,
+        primary: null,
+        me: null,
+        "$clusterTime": null
+      }
+    },
+    stale: false,
+    compatible: true,
+    heartbeatFrequencyMS: 10000,
+    localThresholdMS: 15,
+    setName: null,
+    maxElectionId: null,
+    maxSetVersion: null,
+    commonWireVersion: 0,
+    logicalSessionTimeoutMinutes: null
+  },
+  code: undefined,
+  [Symbol(errorLabels)]: Set(0) {}
+}
