@@ -36,7 +36,7 @@ Caused by Error: read ECONNRESET
         maxWireVersion: 0,
         roundTripTime: -1,
         minRoundTripTime: 0,
-        lastUpdateTime: 239837,
+        lastUpdateTime: 38905,
         lastWriteDate: 0,
         error: MongoError: read ECONNRESET
     at onHeartbeatFailed (file:///D:/Deno/App/Dir/npm/registry.npmjs.org/mongodb/6.10.0/lib/sdam/monitor.js:187:15)
