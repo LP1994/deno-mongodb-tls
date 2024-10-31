@@ -1,10 +1,8 @@
-#!/usr/bin/env -S deno run -A --config=./deno.json --check --reload --watch-hmr
-
 'use strict';
 
 import {
   MongoClient,
-} from 'npm:mongodb';
+} from 'mongodb';
 
 const mongoClientConfig = {
   authMechanism: 'MONGODB-X509',
